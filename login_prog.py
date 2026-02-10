@@ -8,6 +8,7 @@ from enum import nonmember
 
 import getpass
 import json
+import ast
 from xml.etree.ElementInclude import FatalIncludeError
 
 filename = "login_dict.json"
