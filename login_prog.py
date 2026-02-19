@@ -1,6 +1,6 @@
 '''
 This is a set of functions that handle the username and password requirements
-for the main.py task module. File task_dict.json stores the login data.
+for the cli_task.py task module. File task_dict.json stores the login data.
 That file should be encrypted but hasn't happened yet.  The getpass module is
 imported for the hiding of the password characters.  The json module is
 imported for converting text data into dictionaries.
@@ -87,7 +87,7 @@ def check_login(user_name, password):
 
 def login():
     """ This is the main function that manages all the other functions.
-    It is called by main.py to log the user in for task management
+    It is called by cli_task.py to log the user in for task management
     """
     action = input("Press 'Enter' to login, q to quit,"
                         "or type 'new' to create a new account: ")

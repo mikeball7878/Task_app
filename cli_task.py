@@ -1,12 +1,14 @@
 """
 program to track tasks. Tasks are stored in a separate file: task_dict.json
 Uses login_prog.py to handle login and passwords stored in a
-separate file: login_dict.json
+separate file: login_dict.jsonq
 """
+from time import strftime
 
 TASK_FILE = 'task_dict.json'
 
 from login_prog import login, retrieve_dict, save_dict
+import time
 
 def getAction():
     try:
@@ -21,7 +23,8 @@ def getAction():
 
 
 def main():
-
+    now = strftime("%Y-%m-%d %H:%M:%S")
+    print("Current date and time: ", now)
     login_ok = login()
     if login_ok != "OK":
         print("Login failed")
